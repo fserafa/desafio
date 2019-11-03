@@ -16,6 +16,7 @@ class ArtistContainer extends Component {
     }
 
     async componentDidMount() {
+        document.title = "Artist"
         this.setState({ loading: true });
 
         const response = await Axios.get(`https://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=${this.props.artistId}&entity=album`);

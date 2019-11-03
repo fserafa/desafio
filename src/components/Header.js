@@ -5,9 +5,8 @@ import { withRouter } from "react-router-dom";
 
 class Header extends Component {
     render() {
-        const pageTitle = this.props.location.pathname === "/" ? "Artist" : "Album"                
+        const pageTitle = this.props.location.pathname === "/" ? "Artist" : "Album";                
         
-
         return (
             <div style={{ backgroundColor: '#175676' }} >
                 <Container className="p-3 ">
