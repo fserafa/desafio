@@ -1,8 +1,9 @@
 .toggle-buttons {
-    font-size: 25px !important;
+    font-size: 22px !important;
     font-family: 'Roboto', sans-serif !important;
     font-weight: bold !important;
     color: #4BA3c3 !important;
+    cursor: pointer;
 } 
 
 .toggle-buttons:hover {

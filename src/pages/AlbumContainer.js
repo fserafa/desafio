@@ -23,14 +23,14 @@ class AlbumContainer extends Component {
         const { album, loading } = this.state;
         return (
             <div>
-                 {loading && (
+                {loading ? (
                     <div className="d-flex justify-content-center mt-3 mb-3">
                         <Spinner animation="border" role="status">
                             <span className="sr-only">Loading...</span>
                         </Spinner>
                     </div>
-                )}
-                <AlbumSongs album={album} />
+                ) : <AlbumSongs album={album} />}
+
             </div>
         );
     }

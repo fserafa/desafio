@@ -2,5 +2,5 @@
     cursor: pointer;
 }
 .card-list:hover {
-    background-color: #CCE6F4 !important
+   text-decoration: underline;
 }

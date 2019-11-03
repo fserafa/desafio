@@ -10,15 +10,15 @@ const Albums = (props) => {
                 className="border-right-0 border-left-0 border-bottom-0 rounded-0 card-list"
                 key={album.collectionId}
                 onClick={() => props.handleAlbumClick(album.artistId, album.collectionId)}>
-                <Card.Body>
+                <Card.Body className="px-0 py-4">
                     <div className="d-flex justify-content-between ">
-                        <div className="ml-2 d-flex flex-row justify-content-center">
+                        <div className="d-flex flex-row justify-content-center">
                             <div>
                                 <img src={album.artworkUrl100} alt={album.collectionName} />
                             </div>
 
                             <div className="ml-2 d-flex flex-column justify-content-center">
-                                <p className="font-weight-bold mb-0">{album.collectionName}</p>
+                                <div className="font-weight-bold mb-0">{album.collectionName}</div>
                                 <p className="mb-0">{album.artistName}</p>
                             </div>
                         </div>
