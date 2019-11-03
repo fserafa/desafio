@@ -9,13 +9,13 @@ class AlbumContainer extends Component {
         artistId: this.props.location.state.artistId,
         collectionId: this.props.location.state.collectionId,
         loading: true
-
     }
 
     async componentDidMount() {
         this.setState({ loading: true });
 
         const response = await Axios.get(`https://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=${this.state.artistId}&entity=song`);
+        
         this.setState({ album: response.data.results.filter(song => song.collectionId === this.state.collectionId), loading: false });
     }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import artists from './data/artists'
@@ -16,7 +16,10 @@ const Routes = () => {
             <Header />
             <Switch>
                 <Route exact path="/" render={props => <ArtistContainer artistId={artistId} {...props} />} />
-                <Route path="/album" component={AlbumContainer} />
+                <Route path="/album" render={props => props.history.location.state ?
+                    <AlbumContainer  {...props} /> : <Redirect to={'/'} />
+                } />
+
             </Switch>
             <Footer />
 
