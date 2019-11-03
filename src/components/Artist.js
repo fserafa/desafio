@@ -5,7 +5,7 @@ import artistPlaceholder from '../assets/artist.png';
 const Artist = (props) => {
     return (
         <Container>
-            <div className="d-flex align-items-center p-4 justify-content-center border-bottom">
+            <div className="d-flex align-items-center p-5 justify-content-center border-bottom">
                 <div >
                     <img src={artistPlaceholder} alt={"Artist"} />
                 </div>
