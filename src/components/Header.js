@@ -15,7 +15,7 @@ class Header extends Component {
                         <Col xs={1}  className="d-flex  align-items-center">
                             <img src={Logo} alt={"Logo"} />
                         </Col>
-                        <Col xs={11} className="d-flex justify-content-center">
+                        <Col xs={10} className="d-flex justify-content-center">
                             <h1 className="font-weight-bold text-white" style={{ fontFamily: 'Lobster'}}>{pageTitle}</h1>
                         </Col>
                     </Row>
