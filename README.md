@@ -1,6 +1,9 @@
 ##  Print Screen / Capturas de tela
-![Screen 1](https://github.com/fserafa/desafio/blob/master/screens/screen1.jpg)
-![Screen 2](https://github.com/fserafa/desafio/blob/master/screens/screen2.jpg)
+<p float="left">
+  <img src="https://github.com/fserafa/desafio/blob/master/screens/screen1.jpg" width="600" />
+  <img src="https://github.com/fserafa/desafio/blob/master/screens/screen2.jpg" width="250" /> 
+</p>
+
 
 ##  Live demo / Demonstração
 https://desafio-frontend-ex.herokuapp.com/
