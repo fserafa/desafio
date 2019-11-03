@@ -4,7 +4,7 @@ import { Card, ListGroup } from 'react-bootstrap'
 const Albums = (props) => {
     return (
         props.data.map(album => (
-            <Card key={album.collectionId} onClick={() => props.handleAlbumClick(album.artistId, album.collectionId)}>
+            <Card className="border-right-0 border-left-0 border-bottom-0 rounded-0" key={album.collectionId} onClick={() => props.handleAlbumClick(album.artistId, album.collectionId)}>
                 <ListGroup>
                     <Card.Body>
                         <div className="d-flex justify-content-start ">

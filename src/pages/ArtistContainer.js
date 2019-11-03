@@ -48,12 +48,12 @@ class ArtistContainer extends Component {
             <div>
                 <Artist artist={artist} />
 
-                <div className="d-flex flex-column">
-                    <Container>
+                <div className="d-flex flex-column my-3 ">
+                    <Container >
                     	<ToggleButtonGroup type="radio" name="options" defaultValue={1}>
                     	    <ToggleButton
                     	        className="toggle-buttons"
-                    	        variant="outline-primary"
+                                variant="link"
                     	        type="radio"
                     	        name="albums"
                     	        defaultChecked
@@ -61,9 +61,9 @@ class ArtistContainer extends Component {
                     	        onClick={() => this.handleAlbums()}>
                     	        Albums
                     	    </ToggleButton>
-                    	    <ToggleButton
+                    	    <ToggleButton 
                     	        className="toggle-buttons"
-                    	        variant="outline-primary"
+                    	        variant="link"
                     	        type="radio"
                     	        name="songs"
                     	        value={2}
