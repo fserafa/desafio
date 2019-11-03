@@ -14,18 +14,18 @@ class ArtistContainer extends Component {
     }
 
     async componentDidMount() {
-        const response = await Axios.get('https://itunes.apple.com/lookup?id=909253&entity=album');
+        const response = await Axios.get('http://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=909253&entity=album');
         this.setState({ artist: response.data.results[0], data: response.data.results.slice(1) });
     }
 
     handleAlbums = async () => {
-        const response = await Axios.get('https://itunes.apple.com/lookup?id=909253&entity=album');
+        const response = await Axios.get('http://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=909253&entity=album');
 
         this.setState({ data: response.data.results.slice(1), showAlbums: true, showSongs: false });
     }
 
     handleSongs = async () => {
-        const response = await Axios.get('https://itunes.apple.com/lookup?id=909253&entity=song');
+        const response = await Axios.get('http://cors-anywhere.herokuapp.com/https://itunes.apple.com/lookup?id=909253&entity=song');
 
         this.setState({ data: response.data.results.slice(1), showAlbums: false, showSongs: true });
     }
