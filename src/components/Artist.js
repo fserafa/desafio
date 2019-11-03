@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 const Artist = (props) => {
     return (
         <Container className="d-flex flex-column align-items-center">
-            <h1>{props.artist.artistName}</h1>
+            <h1 className="mt-3">{props.artist.artistName}</h1>
             <p>Genre: {props.artist.primaryGenreName}</p>
         </Container>
     );
